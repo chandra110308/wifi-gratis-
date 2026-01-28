@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login WiFi Gratis</title>
+<style>
+    /* RESET & BODY */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('bg2.jpg') no-repeat center top;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    /* OVERLAY */
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.45);
+        z-index: 0;
+    }
+
+    /* CARD */
+    .card {
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        max-width: 420px;
+        padding: 35px 25px;
+        border-radius: 16px;
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.25);
+        color: #fff;
+        text-align: center;
+    }
+
+    .card h1 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    /* BUTTON */
+    .card button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        background: #007bff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.2s ease;
+    }
+
+    .card button:hover {
+        box-shadow: 0 0 20px #00b7ff;
+    }
+
+    .card button:active {
+        transform: scale(0.96);
+    }
+
+    /* FOOTER TEXT */
+    .footer-text {
+        margin-top: 18px;
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+
+    /* SUPPORT SECTION */
+    .support {
+        margin-top: 22px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.75rem;
+        opacity: 0.85;
+    }
+
+    .support img {
+        width: 24px;
+        height: auto;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- overlay -->
+<div class="overlay"></div>
+
+<!-- card -->
+<div class="card">
+    <h1>
+        Selamat Datang <br>Di Suroyo Koridor <br> Pemerintah Kota Probolinggo
+    </h1>
+
+    <form action="status.html" method="post">
+        <input type="hidden" name="username" value="demo">
+        <input type="hidden" name="password" value="demo">
+
+        <button type="submit">
+            CONNECT TO WIFI
+        </button>
+    </form>
+
+    <div class="footer-text">
+        Developed by Pemkot Probolinggo
+    </div>
+
+    <div class="support">
+        Support by Telkom
+        <img src="logoq.png" alt="Telkom Logo">
+    </div>
+</div>
+
+</body>
+</html>
